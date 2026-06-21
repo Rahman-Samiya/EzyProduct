@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers\Dashboard;
 
-/**
- * Service layer for the Dashboard module.
- */
 class DashboardService
 {
     public function __construct(
@@ -12,16 +9,6 @@ class DashboardService
     ) {
     }
 
-    /**
-     * Task 7 — aggregate all dashboard statistics.
-     *
-     * @return array{
-     *     totalCategories: int,
-     *     totalProducts: int,
-     *     totalStock: int,
-     *     latestProducts: \Illuminate\Database\Eloquent\Collection
-     * }
-     */
     public function statistics(): array
     {
         return [

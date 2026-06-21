@@ -4,9 +4,6 @@ namespace App\Http\Controllers\Product;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-/**
- * Validation rules for storing a new product (Task 4 create form).
- */
 class StoreProductRequest extends FormRequest
 {
     public function authorize(): bool
@@ -14,9 +11,6 @@ class StoreProductRequest extends FormRequest
         return true;
     }
 
-    /**
-     * @return array<string, mixed>
-     */
     public function rules(): array
     {
         return [

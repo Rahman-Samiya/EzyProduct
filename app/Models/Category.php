@@ -10,18 +10,10 @@ class Category extends Model
 {
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'name',
     ];
 
-    /**
-     * A Category can have many Products (One-to-Many).
-     */
     public function products(): HasMany
     {
         return $this->hasMany(Product::class);
