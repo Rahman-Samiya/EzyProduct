@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php --version)",
+      "Bash(php artisan *)",
+      "Bash(\"/c/laragon/bin/mysql/mysql-8.0.30-winx64/bin/mysqladmin.exe\" -uroot ping)",
+      "Bash(echo \"exit: $?\")",
+      "Read(//d/laragon/bin/mysql//**)",
+      "Read(//d/laragon/bin/mysql/mysql-8.0.30-winx64/bin//**)",
+      "Bash(\"/d/laragon/bin/mysql/mysql-8.0.30-winx64/bin/mysqld.exe\" --version)",
+      "Bash(\"/d/laragon/bin/mysql/mysql-8.0.30-winx64/bin/mysqladmin.exe\" -uroot -h127.0.0.1 ping)",
+      "Bash(/d/laragon/bin/mysql/mysql-8.0.30-winx64/bin/mysqld.exe *)",
+      "Bash(/d/laragon/bin/mysql/mysql-8.0.30-winx64/bin/mysql.exe *)",
+      "Bash(mkdir -p /d/laragon/www/ezyproduct/public/sb-admin/css /d/laragon/www/ezyproduct/public/sb-admin/js /d/laragon/www/ezyproduct/public/sb-admin/assets)",
+      "Bash(cp /c/Users/Admin-BG/Downloads/startbootstrap-sb-admin/dist/css/styles.css /d/laragon/www/ezyproduct/public/sb-admin/css/)",
+      "Bash(cp -r /c/Users/Admin-BG/Downloads/startbootstrap-sb-admin/dist/js/. /d/laragon/www/ezyproduct/public/sb-admin/js/)",
+      "Bash(cp -r /c/Users/Admin-BG/Downloads/startbootstrap-sb-admin/dist/assets/. /d/laragon/www/ezyproduct/public/sb-admin/assets/)",
+      "Bash(echo \"=== Result ===\")",
+      "Bash(echo \"=== JSON api/2 ===\")",
+      "Bash(curl -s http://127.0.0.1:8123/products/api/2)",
+      "Bash(echo \"\")",
+      "Bash(echo \"=== JSON list \\(first 200 chars\\) ===\")",
+      "Bash(curl -s http://127.0.0.1:8123/products/api/list)"
+    ]
+  }
+}
